@@ -4,9 +4,12 @@
     color: white;
  
 }
+body{
+    animation: backgroundshift 10s infinite;
+}
 .container{
     animation: backgroundshift 10s infinite;
-    height: fit-content;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +23,7 @@
     justify-content: center;
     font-family: 'Molengo', sans-serif;
     border: red 3px solid;
+    overflow: hidden;
 
 }
 @keyframes backgroundshift{
@@ -40,12 +44,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 200px;
+    margin-top: 300px;
     padding: 50px;
 }
 #profile-img{ 
     width: 600px;
     padding: 30px;
     border-radius: 35px;
+    z-index: 2;
 }
 #introduction{
  font-size: 25px;
@@ -59,10 +66,19 @@
     text-align: center;
   font-size: 120px;
 }
+#work-title{
+   margin-top: 10px;
+    font-size: 150px;
+    position: absolute;
+}
 #introduction-title{
   font-size: 100px;
+  z-index: 1;
 }
-.work-page{
-    height: 100vh;
+.works-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
+    height: 150vh;
 }
