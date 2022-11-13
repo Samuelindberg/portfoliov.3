@@ -22,7 +22,6 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Molengo', sans-serif;
-    border: red 3px solid;
     overflow: hidden;
 
 }
@@ -78,7 +77,11 @@ body{
 .works-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 150vh;
+}
+#myrorna{
+    width: 60%;
 }

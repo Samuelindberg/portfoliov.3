@@ -14,8 +14,8 @@ function nameScrollposition(){
    introDesc.style.transform="translate("+posY/2+"px,0px)";
    
 
-  if(posY>1050){
-    workTitle.style.transform = "translate(0,"+ (posY-1050) +"px)";
+  if(posY>1000){
+    workTitle.style.transform = "translate(0,"+ (posY-1000) +"px)";
   }
   else{
     nameTitle.style.transform="translate(0,"+ posY/1.6 +"px)";
