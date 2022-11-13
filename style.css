@@ -68,7 +68,7 @@ body{
 #work-title{
    margin-top: 10px;
     font-size: 150px;
-    position: absolute;
+
 }
 #introduction-title{
   font-size: 100px;
@@ -77,11 +77,18 @@ body{
 .works-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 400px;
     align-items: center;
     width: 100vw;
-    height: 150vh;
+    height: 400vh;
 }
 #myrorna{
+    width: 70%;
+    z-index: 5;
+    position: relative;
+}
+#cicada{
+    margin-top: 700px;
     width: 60%;
 }
