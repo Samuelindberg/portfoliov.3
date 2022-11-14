@@ -9,11 +9,13 @@ body{
 }
 .container{
     animation: backgroundshift 10s infinite;
-
+    transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    perspective: 10px;
+    transform-style: preserve-3d;
 }
 .intro-page{
     width: 100vw;
@@ -52,6 +54,7 @@ body{
     padding: 30px;
     border-radius: 35px;
     z-index: 2;
+    transform: translateZ(300px) scale((300%));
 }
 #introduction{
  font-size: 25px;
