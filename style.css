@@ -14,8 +14,9 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    perspective: 10px;
+  
     transform-style: preserve-3d;
+   
 }
 .intro-page{
     width: 100vw;
@@ -25,7 +26,9 @@ body{
     justify-content: center;
     font-family: 'Molengo', sans-serif;
     overflow: hidden;
-
+    transform-style: preserve-3d;
+    perspective: 10px;
+    
 }
 @keyframes backgroundshift{
     0%{
@@ -54,7 +57,7 @@ body{
     padding: 30px;
     border-radius: 35px;
     z-index: 2;
-    transform: translateZ(300px) scale((300%));
+    transform: translateZ(-10px) scale(2);
 }
 #introduction{
  font-size: 25px;
@@ -75,7 +78,7 @@ body{
 }
 #introduction-title{
   font-size: 100px;
-  z-index: 1;
+  z-index: 3    ;
 }
 .works-container{
     display: flex;
