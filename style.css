@@ -1,7 +1,8 @@
 *{
     padding: 0;
-    margin:0%;
+    margin:0;
     color: white;
+    transform-style: preserve-3d;
 }
 .wrapper{
     background-color: teal;
@@ -10,27 +11,48 @@
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 10px;
-}
-header{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    z-index: -1;
     transform-style: preserve-3d;
 }
+
+#first-page{
+
+    height: 100%;
+    z-index: -1;
+}
+
 #name{
-    height: fit-content;
-    transform: translateZ(-200px) scale(2000%);
-    font-size: 40px;
-    z-index: 2;
+    font-size: 100px;
+    position: relative;
+    transform: translate3d(60rem,-100px,-10px) scale(2);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #profile-img{
-    position: relative;
-    transform: translateZ(-100px) scale(900%);
+    border-radius: 12px;
+    z-index: -1;
+    width: 600px;
+    transform:translateX(-900px)translateZ(-20px) scale(3);
 }
-#text{
+#description{
+    position: fixed;
+    display: inline-block;
+    width: 55%;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    z-index: 1;
-    transform: translateZ(30px) scale(3.1);
-    color: black;
+    z-index: 10;
+
+
+}
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+}
+.intro-text{
+    height: 100vh;
+}
+.work-title{
+    transform: translateY(20rem)translateZ(-30px) scale(4);
 }
