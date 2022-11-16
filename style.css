@@ -61,14 +61,14 @@
     position: absolute;
     font-family: 'Red Hat Display', sans-serif;
     z-index: 20;
-    top:-600px;
-    left: -400px;
+    top:-60rem;
+    left: -80rem;
     font-size: 100px;
 }
 #myrorna{
     position: relative;
-    top: 5rem;
+    top: 180rem;
     width: 80%;
     transition: 400ms;
-    /* transform: translate3d(0,0,-10px) scale(2); */
+    transform: translate3d(0,0,-40px) scale(5);
 }
