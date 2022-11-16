@@ -21,9 +21,18 @@ function introductionMovement(posY){
 introduction.style.opacity=1-wrapper.scrollTop/1000;
 }
 function workTitlePosition(posY){
-        workTitle.style.transform="translate("+(posY-586.5)+"px,"+(posY/1.2-586.5)+"px)";
-        profilePic.style.opacity=1-(posY-350)/1000;
-        if(posY<586){
-            profilePic.style.opacity=1
+    if(posY>1800){
+        alert("test");
+    }
+        workTitle.style.transform="translate("+(posY-586.5)+"px,"+(posY-586.5)/2+"px)";
+        profilePic.style.opacity=1-(posY-350)/1000; 
+        if(posY<2490 && posY>1686){
+            workTitle.style.color="#60A9DD";
+            workTitle.innerHTML="MYRORNA VINTAGE";
         }
+        else{
+            workTitle.style.color="white";
+            workTitle.innerHTML="WORKS";
+        }
+        
 }
