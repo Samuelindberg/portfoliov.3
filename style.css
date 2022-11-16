@@ -16,7 +16,7 @@
 
 #first-page{
 
-    height: 100%;
+    height: 200%;
     z-index: -1;
 }
 
@@ -47,20 +47,27 @@
 
 }
 .work{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
+    height: 400%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .intro-text{
-    height: 100vh;
+    height: 100%;
 }
 #work-title{
-    position: relative;
+    position: absolute;
     font-family: 'Red Hat Display', sans-serif;
-    top: -800px;
-    left: -1200px;
-    /* transform: translateY(200rem)translateZ(-40px) scale(5); */
+    z-index: 20;
+    top:-600px;
+    left: -400px;
     font-size: 100px;
+}
+#myrorna{
+    position: relative;
+    top: 340px;
+    width: 80%;
+    /* transform: translate3d(0,0,-10px) scale(2); */
 }
