@@ -1,6 +1,7 @@
 
 const introduction = document.getElementById("description");
 const wrapper = document.querySelector(".wrapper");
+const workTitle = document.getElementById
 
 // window.addEventListener(scroll,(event)=>{
 //     console.log("test");
@@ -10,8 +11,8 @@ const wrapper = document.querySelector(".wrapper");
 // }
 // );  
 wrapper.addEventListener("scroll",()=>{
-    console.log(wrapper.scrollTop);
-    introduction.style.transform="translate("+wrapper.scrollTop+"px,0px)";
+ 
+    introduction.style.transform="translate("+wrapper.scrollTop+"px,"+wrapper.scrollTop+"px)";
 });
 
 function scrollHor(){
