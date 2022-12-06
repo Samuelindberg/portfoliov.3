@@ -1,74 +1,27 @@
 *{
-    padding: 0;
-    margin:0;
-    color: white;
-    transform-style: preserve-3d;
+    padding:0;
+    margin: 0;
 }
 .wrapper{
-    background-color: teal;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 10px;
-    transform-style: preserve-3d;
+    display:flex;
 }
+nav{
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    background-color: #2596be;
+}
+nav a{
+    border: solid 2px #2596be;
 
+    border-radius: 10px;
+    padding: 3px 8px;
+}
 #first-page{
-
-    height: 200%;
-    z-index: -1;
-}
-
-#name{
-    font-size: 100px;
-    position: sticky;
-    transform: translate3d(58.5rem,-100px,-10px) scale(2);
-    z-index: 100;
-    font-family: 'Red Hat Display', sans-serif;
-    letter-spacing: 6px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 #profile-img{
-    border-top-left-radius: 15px;
-    z-index: -1;
-    width: 600px;
-    transform:translateX(-900px)translateZ(-20px) scale(3);
-}
-#description{
-    top: -200px;
-    right: -200px;
-    position: relative;
-    display: inline-block;
-    width: 55%;
-    font-family: 'Outfit', sans-serif;
-    font-size: 30px;
-    z-index: 10;
-
-
-}
-.work{
-    height: 400%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.intro-text{
-    height: 100%;
-}
-#work-title{
-    position: absolute;
-    font-family: 'Red Hat Display', sans-serif;
-    z-index: 20;
-    top:-60rem;
-    left: -80rem;
-    font-size: 100px;
-}
-#myrorna{
-    position: relative;
-    top: 180rem;
-    width: 80%;
-    transition: 400ms;
-    transform: translate3d(0,0,-40px) scale(5);
+    width: 400px;
 }
