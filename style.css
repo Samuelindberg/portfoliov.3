@@ -1,27 +1,101 @@
+/* global */
 *{
     padding:0;
     margin: 0;
 }
 .wrapper{
     display:flex;
+    flex-direction: column;
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 400vh;
 }
+/* nav */
 nav{
     display: flex;
-    width: 40vw;
-    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
     background-color: #2596be;
+    padding:10px 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
 nav a{
-    border: solid 2px #2596be;
-
+    /* border: solid 1px white; */
     border-radius: 10px;
     padding: 3px 8px;
+    text-decoration: none;
+    color: white;
+    margin: 0 40px;
 }
+
+#nav-icons:nth-child(2){
+   padding-right: 20px;
+}
+nav img{
+    width: 20px;
+    padding: 0 5px;
+}
+/* first page */
 #first-page{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#intro-content-container{
+    margin-top: 70px;
+    color: white;
+    display: flex;
+    height: 600px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 50px;
+}
+#intro-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
 }
 #profile-img{
     width: 400px;
+}
+#developer-span{
+    color: #E88400;
+}
+/* about me page */
+#aboutme-page{
+    height: 100vh;
+}
+#aboutme-title-container{
+    height: 40vh;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+}
+#aboutme-title{
+    font-family: "Red Hat Display";
+    font-size: 100px;
+}
+@media screen and (max-width:480px) {
+    #intro-content-container{
+        flex-direction: column;
+    }
+    .wrapper{
+        background-color: #2596be;
+    }
+    #first-page{
+        background-image: none;
+        justify-content: center;
+        padding: 0 30px;
+        height: 100vh;
+    }
+    #first-page h2{
+        font-size: 30px;
+    }
 }
