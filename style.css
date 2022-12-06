@@ -185,7 +185,7 @@ nav img{
 }
 #skill-desc{
    max-width: 1200px;
-    font-size: 30px;
+    font-size: 20x;
     text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -201,20 +201,36 @@ align-items: center;
 justify-content: center;
 }
 #work-title{
-    font-size: 100px;
+    font-size: 120px;
     font-family: "Red Hat Display";
+    color: white;
+    padding: 40px;
 }
 #work-container{
-    height: 100vh;
+    height: fit-content;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     gap: 100px;
 
 }
-#work-page img{
+#myovies-img-container{
+    height: fit-content;
+    max-width: 1400px;
+}
+#myovies-img{
   /* background-color: #2596be; */
-  height: 80%;
+  width: 100%;
 }
 #myovies-searchpage{
     display: none;
+}
+#work-container #myovies-slideleft{
+    height: 60px;
+}
+#work-container #myovies-slideright{
+    height: 60px;
+}
+#myovies-img-container{
+    transition: 400ms;
 }
