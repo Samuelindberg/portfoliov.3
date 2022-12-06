@@ -9,7 +9,7 @@
     flex-direction: column;
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
     height: 400vh;
     scroll-behavior: smooth;
@@ -95,7 +95,7 @@ nav img{
 }
 /* about me page */
 #aboutme-page{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -142,4 +142,44 @@ nav img{
      #aboutme-content-container{
         flex-direction: column;
      }
+}
+
+/* skills page */
+#skills-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#skills-content-container{
+    width: 100vw;
+    display: flex;
+    padding-left: 202px;
+    justify-content: flex-start;
+}
+#skills-title{
+    padding-left: 200px;
+    font-family: "Red Hat Display";
+    font-size: 100px;
+    color: white;
+    padding-bottom: 30px;
+}
+#tool-icon-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 40px;
+}
+.tool-items{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px red;
+    font-family: "Red Hat Display";
+    color: white;
+}
+.tool-items img{
+    width: 150px;
 }
