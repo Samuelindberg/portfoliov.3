@@ -9,16 +9,16 @@
     flex-direction: column;
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
-    height: 400vh;
-    scroll-behavior: smooth;
+    height: 800vh;
+    /* scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 section{
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 /* nav */
@@ -184,10 +184,37 @@ nav img{
     width: 150px;
 }
 #skill-desc{
-    width: 1000px;
-    font-size: 20px;
+   max-width: 1200px;
+    font-size: 30px;
     text-align: center;
-    color: #E88400;
+    color: white;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
+}
+
+/* work page */
+#work-page{
+height: fit-content;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#work-title{
+    font-size: 100px;
+    font-family: "Red Hat Display";
+}
+#work-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+#work-page img{
+  /* background-color: #2596be; */
+  height: 80%;
+}
+#myovies-searchpage{
+    display: none;
 }
