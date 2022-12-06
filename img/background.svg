@@ -3,19 +3,19 @@
 <svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 4320" style="enable-background:new 0 0 1920 4320;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#428293;}
+	.st0{fill:#2596BE;}
 	.st1{fill:#E88400;}
-	.st2{fill:#2596BE;}
+	.st2{fill:#17323A;}
 	.st3{fill:none;stroke:#EF0A0A;stroke-miterlimit:10;}
 	.st4{fill:#1D1D1B;}
 </style>
-<polygon class="st0" points="0,2133.6 938.5,2553.8 1920,2133.6 1920,3261.5 0,3283.9 "/>
+<polygon class="st0" points="0,2133.6 1920,1706.4 1920,2133.6 1920,3261.5 0,3283.9 "/>
 <g>
 	
-		<image style="overflow:visible;opacity:0.82;" width="2017" height="1573" xlink:href="CEBE133E1E3B264D.png"  transform="matrix(1 0 0 1 -49 1034)">
+		<image style="overflow:visible;opacity:0.82;" width="1969" height="1105" xlink:href="CEBE133E1E3B264D.png"  transform="matrix(1 0 0 1 -25 1061)">
 	</image>
 	<g>
-		<polygon class="st1" points="1920,2133.6 938.5,2553.8 -0.8,2133.6 -0.8,1077.7 1920,1077.7 		"/>
+		<polygon class="st1" points="1920,2133.6 1920,1930.2 -0.8,2133.6 -0.8,1077.7 1920,1077.7 		"/>
 	</g>
 </g>
 <polygon class="st1" points="1920,1080 1920,654.5 0,555.2 0,1080 "/>
@@ -23,23 +23,21 @@
 <rect class="st3" width="1920" height="1080"/>
 <g>
 	
-		<image style="overflow:visible;opacity:0.7;" width="1996" height="928" xlink:href="CEBE133E1E3B2653.png"  transform="matrix(1 0 0 1 -38 -40)">
+		<image style="overflow:visible;opacity:0.7;" width="1969" height="902" xlink:href="CEBE133E1E3B2654.png"  transform="matrix(1 0 0 1 -25 -16)">
 	</image>
 	<g>
 		<g>
 			<g>
-				<polygon class="st4" points="0,0 0,555.2 1920,853.9 1920,0 				"/>
+				<polygon class="st4" points="-0.4,0 -0.4,555.2 1919.6,853.9 1919.6,0 				"/>
 			</g>
 		</g>
 		<g>
-			
-				<image style="overflow:visible;opacity:0.75;enable-background:new    ;" width="1950" height="884" xlink:href="CEBE133E1E3B2655.png"  transform="matrix(1 0 0 1 -15 -8)">
-			</image>
 			<g>
-				<polygon class="st2" points="0,0 0,555.2 1920,853.9 1920,0 				"/>
+				<polygon class="st0" points="-0.4,0 -0.4,555.2 1919.6,853.9 1919.6,0 				"/>
 			</g>
 		</g>
 	</g>
 </g>
 <rect x="-0.4" y="1080" class="st3" width="1920" height="1080"/>
+<rect y="2160" class="st3" width="1920" height="1080"/>
 </svg>
