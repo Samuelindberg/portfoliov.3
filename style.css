@@ -9,13 +9,13 @@
     flex-direction: column;
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100vw;
     height: 800vh;
+    overflow-x: hidden;
     /* scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: scroll; */
-    overflow-x: hidden;
 }
 section{
     /* scroll-snap-align: start; */
@@ -122,6 +122,7 @@ nav img{
     color: #2596be;
 }
 #profile-img{
+    width: 400px;
 }
 #aboutme-headline{
     color: #2596be;
@@ -204,23 +205,45 @@ justify-content: center;
     font-size: 120px;
     font-family: "Red Hat Display";
     color: white;
-    padding: 40px;
+    padding: 200px 20px 0px 20px;
 }
 #work-container{
     height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 100px;
 
 }
+/* myovies */
+#myovies-title{
+    font-size: 100px;
+    font-family: "Poppins";
+    color: orangered;
+}
+#myovies-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#myovies-img-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
 #myovies-img-container{
     height: fit-content;
-    max-width: 1400px;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center
 }
 #myovies-img{
   /* background-color: #2596be; */
-  width: 100%;
+  width: 80%;
 }
 #myovies-searchpage{
     display: none;
@@ -233,4 +256,131 @@ justify-content: center;
 }
 #myovies-img-container{
     transition: 400ms;
+}
+#myovies-btns{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+#myovies-btns button{
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    transition: 300ms ease-in;
+   
+ 
+}
+#myovies-site{
+    border: 5px solid  orangered;
+    background-color: orangered;
+    color: white;
+    font-weight: 400;
+}
+#myovies-site:hover{
+    color: #F7D21B;
+    font-size: 47.25px;
+    transform: scale(1.05);
+}
+#myovies-repo{
+    background-color: transparent;
+    border: 3px solid  #fea049;
+    font-weight: 200;
+    color: rgb(207, 207, 207);
+}
+#myovies-repo:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.332);
+    border: 5px solid  #fea049;
+    color: white;
+    font-size: 47.25px;
+}
+#myovies-desc{
+    width: 80%;
+    font-family: "poppins";
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+/* tic tac toe */
+#tictactoe-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#tictactoe-title{
+    font-size: 100px;
+    font-family: "Poppins";
+    color:#AFF2FB ;
+}
+#tictactoe-img-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+#tictactoe-img-container{
+    height: fit-content;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center
+}
+#tictactoe-img{
+  width: 80%;
+}
+#tictactoe-searchpage{
+    display: none;
+}
+#work-container #tictactoe-slideleft{
+    height: 60px;
+}
+#work-container #tictactoe-slideright{
+    height: 60px;
+}
+#tictactoe-btns{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+#tictactoe-btns button{
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 200; */
+    transition: 300ms ease-in;
+ 
+}
+#tictactoe-play{
+    border: 3px solid  #FF7E50;
+    background-color: #FF7E50;
+    font-weight: 500;
+    color: white;
+}
+#tictactoe-play:hover{
+    transform: scale(1.05);
+    font-size: 47.25px;
+    color: #AFF2FB;
+}
+#tictactoe-repo{
+    background-color: transparent;
+    border: 3px solid  #AFF2FB;
+    font-weight: 200;
+    color: rgb(207, 207, 207);
+}
+#tictactoe-repo:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.332);
+    border: 5px solid  #AFF2FB;
+    color: white;
+    font-size: 47.25px;
 }
