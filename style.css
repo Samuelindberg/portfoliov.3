@@ -419,6 +419,10 @@ nav img {
 }
 
 @media screen and (max-width:1330px) {
+    #aboutme-page {
+        height: 100vh;
+    }
+
     #first-page {
         align-items: center;
         justify-content: center;
@@ -433,6 +437,8 @@ nav img {
     }
 
     #aboutme-content-container {
+        height: fit-content;
+        padding-top: 50px;
         flex-direction: column;
     }
 
@@ -441,9 +447,34 @@ nav img {
     }
 
     #aboutme-headline {
+
         font-size: 74px;
     }
 
+    #profile-img {
+        padding-top: 20px;
+        width: 30vw;
+    }
+
+    /* skills page */
+    #skills-content-container {
+        padding-top: 30px;
+    }
+
+    #skills-title {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    #skills-content-container {
+        margin-top: 600px;
+    }
+
+    #tool-icon-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width:860px) {
@@ -456,6 +487,16 @@ nav img {
         justify-content: flex-start;
         align-items: flex-start;
         height: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #tool-icon-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #skill-content-container {
+        margin-top: 2000px;
     }
 }
 
