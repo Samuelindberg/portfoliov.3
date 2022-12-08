@@ -1,11 +1,13 @@
 /* global */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300&display=swap');
-*{
-    padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    padding: 0;
     margin: 0;
 }
-.wrapper{
-    display:flex;
+
+.wrapper {
+    display: flex;
     flex-direction: column;
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
@@ -17,21 +19,23 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll; */
 }
-section{
+
+section {
     /* scroll-snap-align: start; */
 }
 
 /* nav */
-nav{
+nav {
     display: flex;
     align-items: center;
     width: 100vw;
     justify-content: space-between;
     background-color: #2596be;
-    padding:10px 0;
+    padding: 10px 0;
     font-family: 'Red Hat Display', sans-serif;
 }
-nav a{
+
+nav a {
     /* border: solid 1px white; */
     border-radius: 10px;
     padding: 3px 8px;
@@ -40,113 +44,104 @@ nav a{
     margin: 0 40px;
 }
 
-#nav-icons:nth-child(2){
-   padding-right: 20px;
+#nav-icons:nth-child(2) {
+    padding-right: 20px;
 }
-nav img{
+
+nav img {
     width: 20px;
     padding: 0 5px;
 }
+
 /* first page */
-#first-page{
+#first-page {
     background-repeat: no-repeat;
     background-size: contain;
-    height: 60vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#intro-content-container{
     margin-top: 70px;
+    margin-bottom: 100px;
     color: white;
     display: flex;
-    height: 600px;
-    font-family: 'Red Hat Display', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    font-family: "Poppins";
     font-size: 50px;
 }
-#intro-text-container{
+
+
+
+/* #intro-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 50px;
-}
+} */
 
-#developer-span{
+#developer-span {
     color: #E88400;
 }
-@media screen and (max-width:480px) {
-    #intro-content-container{
-        flex-direction: column;
-    }
-    .wrapper{
-        background-image: none;
-        background-color: #2596be;
-    }
-    #first-page{
-        background-image: none;
-        justify-content: center;
-        padding: 0 30px;
-        height: 100vh;
-    }
-    #first-page h2{
-        font-size: 30px;
-    }
-}
+
+
+
 /* about me page */
-#aboutme-page{
+#aboutme-page {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-#aboutme-title-container{
-    height: 40vh;
-    padding-left: 200px;
-    display: flex;
-    align-items: flex-end;
-}
-#aboutme-content-container{
+
+#aboutme-content-container {
     padding-top: 100px;
     height: 600px;
     display: flex;
 }
-#aboutme-title{
-    font-family: "Red Hat Display";
-    font-size:80px;
+
+#aboutme-title {
+    font-family: "Poppins";
+    font-size: 100px;
     color: white;
-    padding-bottom: 30px;
+    padding: 200px 0 0 80px
 }
-#me-span{
+
+#me-span {
     color: #2596be;
 }
-#profile-img{
+
+#profile-img {
     width: 400px;
 }
-#aboutme-headline{
+
+#aboutme-headline {
     color: #2596be;
     font-size: 80px;
 }
-#aboutme-text{
-    max-width:800px ;
+
+#aboutme-text {
+    max-width: 800px;
     padding-right: 30px;
     font-family: 'Poppins', sans-serif;
     font: 500;
 }
-#aboutme-desc{
+
+#aboutme-desc {
     font-size: 30px;
-   max-width: 100%;
+    max-width: 100%;
     color: white;
 }
+
 @media screen and (max-width:480px) {
-     #aboutme-content-container{
-        flex-direction: column;
-     }
+    #about-title-container {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
 }
 
 /* skills page */
-#skills-page{
+#skills-page {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -154,25 +149,29 @@ nav img{
     flex-direction: column;
     justify-content: center;
 }
-#skills-content-container{
+
+#skills-content-container {
     width: fit-content;
     gap: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#skills-title{
+
+#skills-title {
     font-family: "Red Hat Display";
     font-size: 100px;
     color: white;
 }
-#tool-icon-container{
+
+#tool-icon-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 40px;
 }
-.tool-items{
+
+.tool-items {
     width: 200px;
     height: fit-content;
     display: flex;
@@ -181,11 +180,13 @@ nav img{
     font-family: "Red Hat Display";
     color: white;
 }
-.tool-items img{
+
+.tool-items img {
     width: 150px;
 }
-#skill-desc{
-   max-width: 1200px;
+
+#skill-desc {
+    max-width: 1200px;
     font-size: 20x;
     text-align: center;
     color: white;
@@ -194,20 +195,22 @@ nav img{
 }
 
 /* work page */
-#work-page{
-height: fit-content;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+#work-page {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#work-title{
+
+#work-title {
     font-size: 120px;
     font-family: "Red Hat Display";
     color: white;
     padding: 200px 20px 0px 20px;
 }
-#work-container{
+
+#work-container {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -216,89 +219,105 @@ justify-content: center;
     gap: 100px;
 
 }
+
 /* myovies */
-#myovies-title{
+#myovies-title {
     font-size: 100px;
     font-family: "Poppins";
     color: orangered;
 }
-#myovies-container{
+
+#myovies-container {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-#myovies-img-content{
+
+#myovies-img-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
 }
-#myovies-img-container{
+
+#myovies-img-container {
     height: fit-content;
     max-width: 1600px;
     display: flex;
     justify-content: center
 }
-#myovies-img{
-  /* background-color: #2596be; */
-  width: 80%;
+
+#myovies-img {
+    /* background-color: #2596be; */
+    width: 80%;
 }
-#myovies-searchpage{
+
+#myovies-searchpage {
     display: none;
 }
-#work-container #myovies-slideleft{
+
+#work-container #myovies-slideleft {
     height: 60px;
 }
-#work-container #myovies-slideright{
+
+#work-container #myovies-slideright {
     height: 60px;
 }
-#myovies-img-container{
+
+#myovies-img-container {
     transition: 400ms;
 }
-#myovies-btns{
+
+#myovies-btns {
     padding: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 150px;
 }
-#myovies-btns button{
+
+#myovies-btns button {
     width: 350px;
     height: 80px;
     border-radius: 20px;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
     transition: 300ms ease-in;
-   
- 
+
+
 }
-#myovies-site{
-    border: 5px solid  orangered;
+
+#myovies-site {
+    border: 5px solid orangered;
     background-color: orangered;
     color: white;
     font-weight: 400;
 }
-#myovies-site:hover{
+
+#myovies-site:hover {
     color: #F7D21B;
     font-size: 47.25px;
     transform: scale(1.05);
 }
-#myovies-repo{
+
+#myovies-repo {
     background-color: transparent;
-    border: 3px solid  #fea049;
+    border: 3px solid #fea049;
     font-weight: 200;
     color: rgb(207, 207, 207);
 }
-#myovies-repo:hover{
+
+#myovies-repo:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.332);
-    border: 5px solid  #fea049;
+    border: 5px solid #fea049;
     color: white;
     font-size: 47.25px;
 }
-#myovies-desc{
+
+#myovies-desc {
     width: 80%;
     font-family: "poppins";
     font-size: 30px;
@@ -306,51 +325,61 @@ justify-content: center;
     padding: 20px;
     color: white;
 }
+
 /* tic tac toe */
-#tictactoe-container{
+#tictactoe-container {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-#tictactoe-title{
+
+#tictactoe-title {
     font-size: 100px;
     font-family: "Poppins";
-    color:#AFF2FB ;
+    color: #AFF2FB;
 }
-#tictactoe-img-content{
+
+#tictactoe-img-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
 }
-#tictactoe-img-container{
+
+#tictactoe-img-container {
     height: fit-content;
     max-width: 1600px;
     display: flex;
     justify-content: center
 }
-#tictactoe-img{
-  width: 80%;
+
+#tictactoe-img {
+    width: 80%;
 }
-#tictactoe-searchpage{
+
+#tictactoe-searchpage {
     display: none;
 }
-#work-container #tictactoe-slideleft{
+
+#work-container #tictactoe-slideleft {
     height: 60px;
 }
-#work-container #tictactoe-slideright{
+
+#work-container #tictactoe-slideright {
     height: 60px;
 }
-#tictactoe-btns{
+
+#tictactoe-btns {
     padding: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 150px;
 }
-#tictactoe-btns button{
+
+#tictactoe-btns button {
     width: 350px;
     height: 80px;
     border-radius: 20px;
@@ -358,29 +387,133 @@ justify-content: center;
     font-family: 'Poppins', sans-serif;
     /* font-weight: 200; */
     transition: 300ms ease-in;
- 
+
 }
-#tictactoe-play{
-    border: 3px solid  #FF7E50;
+
+#tictactoe-play {
+    border: 3px solid #FF7E50;
     background-color: #FF7E50;
     font-weight: 500;
     color: white;
 }
-#tictactoe-play:hover{
+
+#tictactoe-play:hover {
     transform: scale(1.05);
     font-size: 47.25px;
     color: #AFF2FB;
 }
-#tictactoe-repo{
+
+#tictactoe-repo {
     background-color: transparent;
-    border: 3px solid  #AFF2FB;
+    border: 3px solid #AFF2FB;
     font-weight: 200;
     color: rgb(207, 207, 207);
 }
-#tictactoe-repo:hover{
+
+#tictactoe-repo:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.332);
-    border: 5px solid  #AFF2FB;
+    border: 5px solid #AFF2FB;
     color: white;
     font-size: 47.25px;
+}
+
+@media screen and (max-width:1330px) {
+    #first-page {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #first-page h1 {
+        font-size: 4rem;
+    }
+
+    #first-page h2 {
+        font-size: 3rem;
+    }
+
+    #aboutme-content-container {
+        flex-direction: column;
+    }
+
+    #aboutme-title {
+        padding-top: 250px;
+    }
+
+    #aboutme-headline {
+        font-size: 74px;
+    }
+
+}
+
+@media screen and (max-width:860px) {
+    #first-page h2 {
+        font-size: 3rem;
+    }
+
+    #first-page #aboutme-title-container {
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    #first-page {
+        align-items: center;
+        /* justify-content: flex-start; */
+        padding-top: 100px;
+        padding-bottom: 40vh;
+    }
+
+    #first-page h1 {
+        font-size: 3.5rem;
+    }
+
+    #first-page h2 {
+        font-size: 2.5rem;
+    }
+
+    #intro-text-container {
+        text-align: center;
+    }
+
+    #first-page {
+        margin: 0;
+    }
+
+    /* about me page */
+
+    #aboutme-title {
+        padding: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #aboutme-content-container {
+        flex-direction: column;
+    }
+
+    #aboutme-content-container {
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    #aboutme-headline {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #aboutme-desc {
+        padding-left: 20px;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    #profile-img {
+        width: 70%;
+    }
+
 }

@@ -46,7 +46,7 @@ myoviesArrowRight.addEventListener("click", () => {
       myoviesNumber = 0;
     }
     MyoviesImg.innerHTML = `<img src="/img/${myoviesImgUrl[myoviesNumber]}" alt="" id="myovies-img">`;
-  }, 700);
+  }, 200);
 });
 
 tictactoeArrowLeft.addEventListener("click", () => {
