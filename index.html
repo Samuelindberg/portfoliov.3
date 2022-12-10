@@ -11,10 +11,16 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav-bar">
+        <button id="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <div id="nav-a">
-            <a href="">HOME</a>
-            <a href="">WORK</a>
+            <a href="#">HOME</a>
+            <a href="#myovies-title">WORK</a>
             <a href="">ABOUT ME</a>
             <a href="">CONTACT ME</a>
         </div>
@@ -23,7 +29,17 @@
             <img src="/img/1820468_brand_linkedin_logo_network_social_icon.svg" alt="">
             <img src="/img/1161953_instagram_icon.svg" alt="">
         </div>
+
     </nav>
+    <nav id="mobile-menu">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="wrapper">
         <section id="first-page">
             <div id="intro-text-container">
@@ -35,20 +51,25 @@
         <div id="about-title-container">
             <h1 id="aboutme-title">ABOUT <span id="me-span">ME</span></h1>
         </div>
-
-
         <section id="aboutme-page">
             <div id="aboutme-content-container">
                 <div id="aboutme-text">
                     <h1 id="aboutme-headline">
                         Front-end Developer
                     </h1>
-                    <p id="aboutme-desc">Jag har goda kunskaper inom HTML, CSS, Adobe XD, Illustrator, Photoshop och
-                        Indesign. Jag går just nu en boot-camp på Techover Academy och har tidigare studerat grafisk
-                        design på Berghs School of Communication. Boot-campen är praktiskt inriktad och uppdateras
-                        ständigt efter vad som används inom front-end developing. Mina kunskaper inom grafisk design har
-                        gett mig ett öga för färgkunskap, layout och typografi. Jag har fått praktisk erfarenhet genom
-                        att jobba som web-utvecklare för catering-firman Cicada Catering.</p>
+                    <p id="aboutme-desc">Hi there! My name is Samuel and I am a student at a boot camp where I am
+                        learning web development and design. I have a background in graphic design and have experience
+                        working with JavaScript, HTML, CSS, and RESTful APIs as well as design tools as Illustrator,
+                        Photoshop, Adobe XD and Indesign. <br><br>
+
+
+                        In addition to my technical skills, I have also completed a course at Berghs School of
+                        Communication where i learnt
+                        Graphic Design and to have a strong understanding of user and customer-centered design
+                        principles. <br><br>
+                        I am a hardworking and dedicated individual who is always looking for opportunities to learn and
+                        grow. I am excited about the opportunity to join a team of skilled professionals and contribute
+                        my skills and expertise to exciting projects.</p>
                 </div>
                 <img src="/img/URZ09625.jpg" alt="" id="profile-img">
             </div>
@@ -101,35 +122,51 @@
                         <h1>Xd</h1>
                     </div>
                 </div>
-                <p id="skill-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore voluptatem
-                    enim. Commodi voluptas optio placeat nobis fugiat? Ex reprehenderit deleniti iure quas corrupti
-                    facere iusto cupiditate nisi, id necessitatibus!
-                    Velit suscipit sint expedita. Nesciunt aut corporis debitis earum reiciendis beatae ipsa dolores
-                    labore, unde quia blanditiis. Inventore eligendi culpa eos temporibus ab non necessitatibus
-                    voluptates itaque possimus nostrum! Voluptatem.</p>
+                <p id="skill-desc">As a skilled developer and designer, I have a strong foundation in HTML, CSS, and
+                    JavaScript, as well as experience with APIs and popular design tools such as Illustrator, Photoshop,
+                    and Adobe XD. I have a good eye for design, layout, animations, and colors, and I am able to create
+                    responsive and user-friendly interfaces that are both functional and aesthetically pleasing. Whether
+                    building a website from scratch or improving the design of an existing site, I am always looking for
+                    ways to push the boundaries of what is possible and deliver high-quality solutions exceed
+                    expectations.</p>
             </div>
         </section>
         <section id="work-page">
             <h1 id="work-title">MY WORK</h1>
             <div id="work-container">
-
                 <div id="myovies-container">
                     <h1 id="myovies-title">MYOVIES</h1>
-                    <div id="myovies-img-content">
+                    <img src="/img/myovies-startpage-laptop.png" alt="" id="myovies-startpage-img">
+                    <div id="myovies-demo-container">
+                        <video src="/img/myovies-startpage-laptop-video.mp4" autoplay>
+                            Your browser does not support the video tag.
+                        </video>
+                        <img src="/img/myovies-searchpage-laptop.png" alt="" id="myovies-search-img">
+                        <img src="/img/myovies-desc-phone.png" alt="" id="myovies-desc-img">
+                        <img src="/img/myovies-ratinglaptop.png" alt="" id="myovies-rating-img">
+
+                    </div>
+
+                    <!-- <div id="myovies-img-content">
                         <img src="/img/arrow-left.png" alt="" id="myovies-slideleft">
                         <div id="myovies-img-container">
                             <img src="/img/intro-page-nosearch.png" alt="" id="myovies-img">
                         </div>
                         <img src="/img/arrowright.png" alt="" id="myovies-slideright">
-                    </div>
+                    </div> -->
+
+                    <p id="myovies-desc">A movie database and rating site
+                        built with JavaScript. The site offers a comprehensive collection of films, provided by a
+                        RESTful API. Users can rate movies and see their ratings alongside the average ratings for each
+                        film. The site also features a beautiful and modern design, enhanced by CSS animations and
+                        transitions. I have carefully designed and implemented the site using JavaScript, CSS, and HTML
+                        to ensure that it is responsive, scalable, and performant."</p>
                     <div id="myovies-btns">
-                        <button id="myovies-site">GO TO SITE</button>
-                        <button id="myovies-repo">Github Repo </button>
+                        <a href="https://movieratings.vercel.app" target="_blank"><button id="myovies-site">GO TO
+                                SITE</button></a>
+                        <a href="https://github.com/Samuelindberg/movieratings"></a><button id="myovies-repo">Github
+                            Repo </button>
                     </div>
-                    <p id="myovies-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic accusamus dolores
-                        omnis temporibus suscipit, maxime nam commodi quibusdam qui! Corrupti libero dolorem quibusdam
-                        veritatis ducimus dicta ad consectetur optio aspernatur.
-                        Vero quia explicabo.</p>
                 </div>
                 <div id="tictactoe-container">
                     <h1 id="tictactoe-title">TIC TAC TOE</h1>
@@ -144,19 +181,20 @@
                         <a href="https://tictactoe-snowy-nine.vercel.app/" target="_blank"><button
                                 id="tictactoe-play">PLAY
                                 NOW!</button></a>
-                        <button id="tictactoe-repo">Github Repo </button>
+                        <a href="https://github.com/Samuelindberg/treirad"><button id="tictactoe-repo">Github Repo
+                            </button></a>
                     </div>
 
-                    <p id="myovies-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic accusamus dolores
+                    <!-- <p id="myovies-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic accusamus dolores
                         omnis temporibus suscipit, maxime nam commodi quibusdam qui! Corrupti libero dolorem quibusdam
                         veritatis ducimus dicta ad consectetur optio aspernatur.
-                        Vero quia explicabo.</p>
+                        Vero quia explicabo.</p> -->
                 </div>
             </div>
 
         </section>
     </div>
-    <script src="/script.js" defer></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
